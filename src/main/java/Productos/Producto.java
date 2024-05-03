@@ -91,8 +91,15 @@ public class Producto {
         sc.nextInt();
         sc.nextLine();
         System.out.println("Categoria: ");
-        Categoria
+        String nomCategoria = cat.getNomCat();
     }
 
-    public void seleccionarProducto(){}
+    public void seleccionarProducto(){
+        System.out.println("Id Producto: "+ idProd);
+        System.out.println("Nombre del producto: "+ nombreprod);
+        System.out.println("Precio del prodcuto: "+ precio);
+        System.out.println("Cantidad de prodcutos: "+ cantidad);
+        String nomCategoria = cat.getNomCat();
+        System.out.println("Categoria: "+ nomCategoria);
+    }
 }
