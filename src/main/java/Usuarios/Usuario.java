@@ -2,7 +2,7 @@ package Usuarios;
 
 import java.util.Scanner;
 
-public class Usuario {
+public abstract class Usuario implements UtilUsuario {
 
     Scanner sc = new Scanner(System.in);
 
