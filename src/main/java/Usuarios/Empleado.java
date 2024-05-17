@@ -39,9 +39,9 @@ public class Empleado extends Usuario{
     @Override
     public void crearUsuario() {
         super.crearUsuario();
-        System.out.println("Cargo: ");
+        System.out.println("---------------------------CARGO---------------------------");
         cargo = sc.nextLine();
-        System.out.println("Salario: ");
+        System.out.println("---------------------------SALARIO-------------------------");
         salario = sc.nextDouble();
     }
 

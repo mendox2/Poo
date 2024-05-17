@@ -79,18 +79,18 @@ public class Producto {
     }
 
     public void crearProducto(){
-        System.out.println("Id Producto: ");
+        System.out.println("---------------------------ID PRODUCTO-----------------------------------");
         idProd = sc.nextInt();
         sc.nextLine();
-        System.out.println("Nombre del producto: ");
+        System.out.println("---------------------------NOMBRE DEL PRODUCTO---------------------------");
         nombreprod = sc.nextLine();
-        System.out.println("Precio del prodcuto: ");
+        System.out.println("---------------------------PRECIO DEL PRODUCTO---------------------------");
         precio = sc.nextDouble();
         sc.nextLine();//Siempre que reciba datos numericos por scanner resetea con nextLine()
-        System.out.println("Cantidad de prodcutos: ");
+        System.out.println("---------------------------CANTIDAD DE PRODUCTOS-------------------------");
         sc.nextInt();
         sc.nextLine();
-        System.out.println("Categoria: ");
+        System.out.println("---------------------------CATEGORIA-------------------------------------");
         String nomCategoria = cat.getNomCat();
     }
 

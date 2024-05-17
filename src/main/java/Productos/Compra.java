@@ -4,6 +4,7 @@ import Usuarios.Cliente;
 
 import java.util.LinkedHashSet;
 import java.util.Scanner;
+import java.util.TreeMap;
 
 public class Compra {
 
@@ -65,34 +66,35 @@ public class Compra {
     }
 
     LinkedHashSet<Object> compra = new LinkedHashSet<>();
+    TreeMap <String , Compra> treeCompras = new TreeMap<String, Compra>(); //No lo supe usar :/
 
     public void registroCompra(){
-        System.out.println("Ingresar codigo de compra: ");
+        System.out.println("---------------------------INGRESAR CODIGO DE LA COMPRA ---------------------------");
         idComra = sc.nextInt();
         compra.add(idComra);
         sc.nextLine();
-        System.out.println("Ingresar id cliente: ");
+        System.out.println("---------------------------INGRESAR ID DEL CLIENTE---------------------------------");
         int idCliente = cliente.getCodcliente();
         compra.add(idCliente);
         sc.nextLine();
-        System.out.println("Ingrese nombre del cliente: ");
+        System.out.println("---------------------------NOMBRE DEL CLIENTE--------------------------------------");
         String nomcliente = cliente.getNombre();
         compra.add(nomcliente);
-        System.out.println("Id producto: ");
+        System.out.println("---------------------------ID DEL PRODUCTO-----------------------------------------");
         int idProd = producto.getIdProd();
         compra.add(idProd);
         sc.nextLine();
-        System.out.println("Nombre producto: ");
+        System.out.println("---------------------------NOMBRE DEL PRODUCTO-------------------------------------");
         String nombreProducto = getProducto().getNombreprod();
         compra.add(nombreProducto);
-        System.out.println("Precio producto: ");
+        System.out.println("---------------------------PRECIO DEL PRODUCTO-------------------------------------");
         double precio = producto.getPrecio();
         compra.add(precio);
-        System.out.println("Cantidad: ");
+        System.out.println("---------------------------CANTIDAD------------------------------------------------");
         cantidad = sc.nextInt();
         compra.add(cantidad);
         sc.nextLine();
-        System.out.println("Total: ");
+        System.out.println("---------------------------TOTAL---------------------------------------------------");
         double totalCompra = precio * cantidad;
         compra.add(totalCompra);
     }

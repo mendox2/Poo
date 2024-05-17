@@ -9,6 +9,7 @@ public class Cliente extends Usuario{
     private String tipoCliente;
     private int codcliente;
 
+
     //Constructor
     public Cliente(){
         super();//para pasar las cosas de clase padre
@@ -43,9 +44,9 @@ public class Cliente extends Usuario{
     @Override
     public void crearUsuario() {
         super.crearUsuario();
-        System.out.println("Tipo cliente: ");
+        System.out.println("---------------------------TIPO CLIENTE---------------------------");
         tipoCliente = sc.nextLine();
-        System.out.println("Codigo cliente: ");
+        System.out.println("---------------------------CODIGO CLIENTE-------------------------");
         codcliente = sc.nextInt();
     }
 

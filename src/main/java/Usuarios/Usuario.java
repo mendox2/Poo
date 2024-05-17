@@ -70,16 +70,16 @@ public abstract class Usuario implements UtilUsuario {
     //Metodos o comportamientos
 
     public void crearUsuario(){
-        System.out.println("Id: ");
+        System.out.println("---------------------------ID-------------------------------");
         id = sc.nextInt();
         sc.nextLine();
-        System.out.println("Nombre: ");
+        System.out.println("---------------------------NOMBRE---------------------------");
         nombre = sc.nextLine();
-        System.out.println("Apellidio: ");
+        System.out.println("---------------------------APELLIDO-------------------------");
         apellido = sc.nextLine();
-        System.out.println("Telefono: ");
+        System.out.println("---------------------------TELEFONO-------------------------");
         phone = sc.nextLine();
-        System.out.println("Correo: ");
+        System.out.println("---------------------------CORREO---------------------------");
         mail = sc.nextLine();
     }
 

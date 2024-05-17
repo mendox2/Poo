@@ -39,10 +39,10 @@ public class Categoria {
     //4. Crear metodos propios.
 
     public void crearCategoria(){
-        System.out.println("Id categoria: ");
+        System.out.println("---------------------------ID CATEGORIA---------------------------");
         idCat = sc.nextInt();
         sc.nextLine(); //Siempre que se haga un nextInt() hacer abajo un nextLine()
-        System.out.println("Nombre categoria: ");
+        System.out.println("---------------------------NOMBRE CATEGORIA-----------------------");
         nomCat = sc.nextLine();
     }
 

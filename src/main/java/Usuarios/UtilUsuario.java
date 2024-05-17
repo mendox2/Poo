@@ -5,4 +5,7 @@ public interface UtilUsuario {
     public void crearUsuario();
 
     public void seleccionarUsuario();
+
+    public void seleccionarUsuario(String nit, String rut);
+
 }
