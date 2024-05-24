@@ -21,6 +21,8 @@ public class Categoria {
         this.nomCat = nomCat;
     }
 
+    //3. Crear getters y setters
+
     public int getIdCat() {
         return idCat;
     }
@@ -41,7 +43,7 @@ public class Categoria {
     public void crearCategoria(){
         System.out.println("---------------------------ID CATEGORIA---------------------------");
         idCat = sc.nextInt();
-        sc.nextLine(); //Siempre que se haga un nextInt() hacer abajo un nextLine()
+        sc.nextLine(); //Siempre que se haga un nextInt(); hacer abajo un nextLine();
         System.out.println("---------------------------NOMBRE CATEGORIA-----------------------");
         nomCat = sc.nextLine();
     }

@@ -11,5 +11,8 @@ public class TestUsuario {
         System.out.println(usuario1.getMail());
                ES UNA CLASE ABTRACTA QUE NO SE PUEDE INSTANCIAR
 */
+        Cliente cliente = new Cliente();
+        cliente.crearUsuario();
+        cliente.seleccionarUsuario();
     }
 }

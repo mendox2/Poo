@@ -68,7 +68,7 @@ public class TestProductos {
                         compraProductos.imprimirCompra();
                         break;
                     case 7:
-                        System.out.println("Saliendo del menú, vuelva pronto 🖐");
+                        System.out.println("Saliendo del menú, vuelva pronto");
                         break;
                     default:
                         System.out.println("Lo lamento el numero no fue identificado," +
