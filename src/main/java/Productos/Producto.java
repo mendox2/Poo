@@ -13,17 +13,23 @@ public class Producto {
     private double precio;
     private int cantidad;
     Categoria cat;
+    private double costo;
+    private double margenGanancia;
 
     //Constructores
 
-    public Producto(Scanner sc, int idProd, String nombreprod, double precio, int cantidad, Categoria cat) {
+
+    public Producto(Scanner sc, int idProd, String nombreprod, double precio, int cantidad, Categoria cat, double costo, double margenGanancia) {
         this.sc = sc;
         this.idProd = idProd;
         this.nombreprod = nombreprod;
         this.precio = precio;
         this.cantidad = cantidad;
         this.cat = cat;
+        this.costo = costo;
+        this.margenGanancia = margenGanancia;
     }
+
     public Producto(){
 
     }
@@ -78,14 +84,34 @@ public class Producto {
         this.cat = cat;
     }
 
+    public double getCosto() {
+        return costo;
+    }
+
+    public void setCosto(double costo) {
+        this.costo = costo;
+    }
+
+    public double getMargenGanancia() {
+        return margenGanancia;
+    }
+
+    public void setMargenGanancia(double margenGanancia) {
+        this.margenGanancia = margenGanancia;
+    }
+
     public void crearProducto(){
         System.out.println("---------------------------ID PRODUCTO-----------------------------------");
         idProd = sc.nextInt();
         sc.nextLine();
         System.out.println("---------------------------NOMBRE DEL PRODUCTO---------------------------");
         nombreprod = sc.nextLine();
+        System.out.println("---------------------------Costo-----------------------------------------");
+        double costo = sc.nextDouble();
+        System.out.println("---------------------------Margen de ganancia----------------------------");
+        double margenGanancia = sc.nextDouble();
         System.out.println("---------------------------PRECIO DEL PRODUCTO---------------------------");
-        precio = sc.nextDouble();
+        precio = calcularPrecio(costo, margenGanancia);
         sc.nextLine();//Siempre que reciba datos numericos por scanner resetea con nextLine()
         System.out.println("---------------------------CANTIDAD DE PRODUCTOS-------------------------");
         sc.nextInt();
@@ -101,5 +127,11 @@ public class Producto {
         System.out.println("Cantidad de prodcutos: "+ cantidad);
         String nomCategoria = cat.getNomCat();
         System.out.println("Categoria: "+ nomCategoria);
+    }
+
+    public double calcularPrecio(double costoProducto, double margenGanacia){
+        double precio = costoProducto/(1-margenGanacia);
+
+        return precio;
     }
 }
