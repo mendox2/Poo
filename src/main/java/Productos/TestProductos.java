@@ -11,6 +11,8 @@ public class TestProductos {
     public static void main(String[] args) {
 /*        Usuario usuario3 = new Usuario(); no se puede implementar usuario por
  ser abstracta*/
+
+        /*
         boolean conf;
         boolean cont;
         int categoriaa;
@@ -80,5 +82,8 @@ public class TestProductos {
             } while (cont == true);
             System.out.println("---------------------------HASTA LUEGO---------------------------");
         }
+    }
+
+         */
     }
 }

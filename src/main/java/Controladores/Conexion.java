@@ -9,6 +9,7 @@ public class Conexion {
     public Connection getConnect(){
 
         Connection connection = null;
+
         try{
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/tienda_cesde","root", "");
             if(connection != null){

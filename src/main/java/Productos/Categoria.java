@@ -40,14 +40,6 @@ public class Categoria {
     }
     //4. Crear metodos propios.
 
-    public void crearCategoria(){
-        System.out.println("---------------------------ID CATEGORIA---------------------------");
-        idCat = sc.nextInt();
-        sc.nextLine(); //Siempre que se haga un nextInt(); hacer abajo un nextLine();
-        System.out.println("---------------------------NOMBRE CATEGORIA-----------------------");
-        nomCat = sc.nextLine();
-    }
-
     public void seleccionarCategoria(){
         System.out.println("Id categoria: "+ idCat);
         System.out.println("Nombre categoria: "+ nomCat);
