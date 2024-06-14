@@ -20,4 +20,45 @@ public class CategoryService {
         CategoryDAO.createCategoryDAO(categoria);
     }
 
+    public void selectCategory(){
+
+        CategoryDAO.selectCategoryDAO();
+
+    }
+
+    public void deleteCategory(){
+
+        System.out.println("Indique el ud de la categoria a Eliminar");
+        int id = sc.nextInt();
+        CategoryDAO.deleteCategoryDAO(id);
+
+    }
+
+    public void updateCategory(Categoria category){
+
+        System.out.println("Seleccione el campo a eliminar\n" +
+                "1. Actualizar ");
+
+        int opc = sc.nextInt();
+        sc.nextLine();
+        category.setOpc(opc);
+
+        switch(opc){
+            case 1:
+                System.out.println("Ingrese el id de la categoria a actualizar");
+                int id = sc.nextInt();
+                sc.nextLine();
+                category.setIdCat(id);
+                System.out.println("Ingrese el nuevo nombre de la categoria");
+                String nombreNuevoCategoria = sc.nextLine();
+                category.setNomCat(nombreNuevoCategoria);
+
+                CategoryDAO.updateCategoryDAO(category);
+                break;
+            default:
+                System.out.println("Ingrese una opcion valida");
+        }
+
+    }
+
 }

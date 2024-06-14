@@ -11,6 +11,11 @@ public class TestCategory {
 
         categoryService.crearCategoria(category);
 
+        categoryService.selectCategory();
+
+        categoryService.deleteCategory();
+
+        categoryService.updateCategory(category);
     }
 
 }

@@ -9,6 +9,7 @@ public class Categoria {
     //1. Crear atributos.
     private int idCat;
     private String nomCat;
+    private int opc;
 
     //2. Crear el constructor.
 
@@ -16,9 +17,18 @@ public class Categoria {
 
     }
 
-    public Categoria(int idCat, String nomCat) {
+    public int getOpc() {
+        return opc;
+    }
+
+    public void setOpc(int opc) {
+        this.opc = opc;
+    }
+
+    public Categoria(int idCat, String nomCat, int opc) {
         this.idCat = idCat;
         this.nomCat = nomCat;
+        this.opc = opc;
     }
 
     //3. Crear getters y setters
